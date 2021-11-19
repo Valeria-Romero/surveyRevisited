@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sopcket io</title>
+    </head>
+    <body>
+        <div class="message">
+
+        </div>
+        <main style="margin: 40px; border: 2px solid black; border-radius: 5px; padding: 25px; width: 50%;">
+            <h1>Welcome to the socket io application</h1>
+            <form class="form">
+            
+                <div style="margin-bottom: 20px;">
+                    <label>Your Name:</label>
+                    <input type="text" name="userName" id="userName">
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label>Dojo Location:</label>
+                    <select name="location" id="location">
+                        <option>Mountain View</option>
+                        <option>San Jose</option>
+                        <option>Costa Rica</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label>Favorite Language:</label>
+                    <select name="favorite" id="favorite">
+                        <option>JavaScript</option>
+                        <option>Phyton</option>
+                        <option>Java</option>
+                    </select>
+                </div>
+                
+                <div style="margin-bottom: 20px;">
+                    <label>Comment (Optional):</label> <br/>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+            
+                <button type="submit">Submit</button>
+            
+            </form>
+        </main>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script type ="text/javascript" src="/socket.io/socket.io.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+
+</html>
